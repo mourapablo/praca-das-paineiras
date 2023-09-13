@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(vista2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+ 
+    
+}
+
+
+header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-color: rgba(128, 128, 128, 1);
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: background-color 2s ease-in-out;
+
+}
+
+.corpo {
+    padding-top: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+header:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.logo img {
+    margin-top: -20px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.barra-lateral {
+    position: fixed;
+    z-index: 0;
+    background-color: transparent;
+    height: 500px;
+    transition: background-color 2s ease-in-out;
+    margin-top: -20px !important;
+    padding: 20px;
+    
+}
+
+
+
+.barra-lateral ul {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 200px;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateX(-70%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.barra-lateral:hover ul {
+    transform: translate(0);
+    margin-top: 10px;
+}
+
+.barra-lateral li {
+
+    text-align: center;
+}
+
+.barra-lateral ul li {
+    display: block;
+    margin: 10PX 0;
+    margin-bottom: 10px;
+}
+
+.barra-lateral ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.rodape{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(116, 115, 115);
+    color: white;
+    text-align: center;
+    transition: background-color 2s ease-in-out;
+}
+.rodape:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.res img{
+ display: block;
+ margin: 0 auto;
+ max-width: 400px;
+ max-height: 400px;
+ border-radius: 50px;
+ margin-left: 100px;
+}

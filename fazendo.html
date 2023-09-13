@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fazendo.css">
+    <title>Praça das Paineiras</title>
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Marca_Paineiras-01-300x212 - Copia.png" alt="" width="200" height="120">
+            <h1>Edf. Praça das Paineiras</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="" id="historia">QUEM SOMOS</a></li>
+                <li><a href="">ÁREA DE LAZER</a></li>
+                <li><a href="">SALÃO DE FESTAS</a></li>
+                <li><a href="">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="res">
+
+        </div>
+    </section>
+    <section>
+        <aside class="barra-lateral">
+
+            <ul>
+                <li><a href="">Piscina</a></li>
+                <li><a href="">Campo</a></li>
+                <li><a href="">Coworking</a></li>
+                <li><a href="">Salão de festa</a></li>
+                <li><a href="">Salão Gourmet</a></li>
+                <li><a href="">Brinquedoteca</a></li>
+                <li><a href="">Sala de Jogos</a></li>
+            </ul>
+
+        </aside>
+        <section>
+            <div class="res">
+              <img class="imagem" src="" alt="">
+              <p class="texto"></p>
+            </div>
+          </section>
+
+
+    </section>
+    <footer>
+        <div class="rodape">
+            <p>&copy; Copyrihgt 2023 Todos os direitos reservados</p>
+        </div>
+    </footer>
+   
+      
+    <script>
+        let historiaLink = document.querySelector('#historia');
+        let imagem = 'fachada.jpg';
+        let texto = 'O prédio surgiu...';
+  
+        historiaLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            let res = document.querySelector('.res');
+            let imagemElemento = document.querySelector('.imagem');
+            let textoElemento = document.querySelector('.texto');
+  
+            imagemElemento.src = imagem;
+            textoElemento.textContent = texto;
+  
+            res.appendChild(imagemElemento);
+            res.appendChild(textoElemento);
+        });
+      </script>
+  
+      
+</body>
+
+</html>
